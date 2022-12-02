@@ -19,4 +19,6 @@ fetch(URL)
 
             document.getElementById("lancamentos").innerHTML = lancamentos;
         }
+
+        
     })
