@@ -1,0 +1,470 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    border-bottom: 3px solid blueviolet;
+
+}
+
+h1{
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 4px 4px 0px #000;
+}
+
+.header img{
+    width: 100px;
+    height: 100px;
+}
+
+.header-link{
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+    border-left: 3px solid blueviolet;
+}
+
+.header-item:hover{
+    transform: scale(1.1);
+}
+
+.back{
+    background-image: url(img/Background06.jpg);
+}
+
+.input-container{
+    position: relative;
+}
+
+.input-container label{
+    font-size: 20px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.pesquisa{
+    border-radius: 15px;
+    height: 40px;
+    margin-right: 30px;
+    margin-left: 0px;
+    padding-left: 40px;
+    font-size: 20px;
+}
+
+.main h1{
+    color: white;
+    font-size: 35px;
+    text-align: center;
+    padding: 30px;
+}
+
+.carousel{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.content{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.nav{
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid #FFF;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.bar:hover{
+    background: #FFF;
+}
+
+.off{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide{
+    width: 20%;
+    transition: 600ms;
+}
+
+.slide h1{
+    background-color: rgba(0, 0, 0, 0.8);
+} 
+
+#radio1:checked ~ .s1{
+    margin-left: 0;
+
+}
+
+#radio2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .s1{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .s1{
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .s1{
+    margin-left: -80%;
+}
+
+.slide .legend{
+    font-size: 20px;
+}
+
+.img-carousel{
+    width: 100%;
+    height: 100%;
+}
+
+
+.text-destaques{
+    color: rgb(255, 255, 255);
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 25px;
+    text-align: left;
+}
+
+.text-destaques p{
+    text-align: left;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+}
+
+.text-destaques h2,b{
+    text-shadow: 4px 4px 0px #000;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+.text-destaques h2{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.main{
+    margin: 0px;
+    padding: 0px;
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 15px;
+    list-style: none;
+
+}
+
+.filtros{
+    margin: 10px;
+}
+
+.form-select{
+    border-radius: 15px;
+    width: 180px;
+    height: 30px;
+    font-family: 'Press Start 2P', cursive;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.games{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.games img{
+    max-width: 100%;
+    display: block;
+    height: 250px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 400px;
+    padding: 30px;
+}
+
+.cardb{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.cardb button{
+    width: 300px;
+    height: 50px;
+    border-radius: 15px;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+
+.line{
+    font-size: 20px;
+    line-height: 10px;
+    text-align: left;
+}
+
+.lancamentos{
+    background-color: rgb(0, 0, 0, 0.8);
+    text-align: center;
+    border-top: 3px solid blueviolet;
+    border-bottom: 3px solid blueviolet;
+}
+
+.card p{
+    color: white;
+    padding: 20px;
+}
+
+.card a{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.card button{
+    justify-content: end;
+}
+
+.card-text{
+    color: white;
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 3px;
+    margin: 20px;
+}
+
+.card-body{
+    padding: 15px;
+}
+
+.img-pp{
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.ex-pp h2,h3,p{
+    color: white;
+    line-height: 20px;
+}
+
+.ex-pp h2{
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 0px #000;
+    font-size: 30px;
+}
+
+.ex-pp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+
+.pp{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card-pp{
+    width: 400px;
+}
+
+.card-pp h3{
+    text-align: center;
+    text-shadow: 4px 4px 0px #000;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-pp p{
+    font-size: 25px;
+    padding: 5px;
+}
+
+.fim{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.8);
+    gap: 30px;
+    border-top: 3px solid blueviolet;
+}
+
+.fim h1{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+    text-shadow: 4px 4px 0px #000;
+}
+
+.sobre{
+    grid-column: 1;
+}
+
+.sobre p{
+    padding: 20px;
+}
+
+.editorial{
+    grid-column: 2;
+}
+
+.editorial p{
+    text-align: left;
+    padding: 5px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
+.editorial h1{
+    padding-left: 0px;
+}
+
+.lista-logo{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    margin-left: 500px;
+}
+
+.rodapé{
+    background-color: rgba(0, 0, 0, 0.8);
+    border-top: 3px solid blueviolet;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-copy{
+    color: white;
+}
+
+.redes-sociais{
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container h1{
+    color: white;
+    text-shadow: 4px 4px 0px #000;
+    margin-top: 15px;
+}
+
+.container p{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.info{
+    text-align: left;
+}
+
+.banner{
+    width: 60%;
+    height: 540px;
+    padding: 15px;
+}
+
+.title{
+    border-top: #000 solid 3px;
+}
