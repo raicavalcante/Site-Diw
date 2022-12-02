@@ -13,12 +13,10 @@ fetch(URL)
                     <p class="line">Tags: ${games.results[i+5].tags[i+5].name}, ${games.results[i+5].tags[i+6].name}, ${games.results[i+5].tags[i+7].name}</p>
                     <p class="line">Rating: ${games.results[i+5].rating}</p>
                     <p class="line">Lançamento: ${games.results[i+5].released}</p>
-                    <a href="detalhes.html" class="card-text">Mais detalhes</a>
+                    <a href="detalhes.html?id=${games.results[i+5].id}" class="card-text">Mais detalhes</a>
                 </div>
             </div>`;
 
             document.getElementById("lancamentos").innerHTML = lancamentos;
         }
-
-
     })

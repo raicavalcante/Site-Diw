@@ -1,4 +1,4 @@
-URL = "https://api.rawg.io/api/games?key=7c1ca29f7d5f46918d0831cc3b6ab4cf"
+URL = "https://api.rawg.io/api/games?key=7c1ca29f7d5f46918d0831cc3b6ab4cf";
 
 fetch(URL)
     .then(res => res.json())
@@ -10,7 +10,7 @@ fetch(URL)
                 <p class="legenda">${mLanca.results[i].name}</p>
                 <img src="${mLanca.results[i].background_image}">
                 <div class="card-body" style="margin-top: 15px;">
-                    <a href="detalhes.html" class="card-text">Mais detalhes</a>
+                    <a href="detalhes.html?id=${mLanca.results[i].id}" class="card-text">Mais detalhes</a>
                 </div>
             </div>`;
 
